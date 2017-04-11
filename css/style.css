@@ -1,0 +1,88 @@
+/* Used to create partially transparent overlays */
+
+.layer {
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+}
+
+/* Used to remove any padding from Bootstrap columns */
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.fillwidth {
+   width: 100% !important;
+}
+
+/* - - - - - - - - -
+ * 	WEBSITE HEADER
+- - - - - - - - - - */
+
+.jumbotron {
+	background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/Tronto-wallpaper-26.jpg);
+	background-size: cover;
+	height: 700px;
+}
+
+#website-header {
+	color: black;
+	text-transform: uppercase;
+
+	position: relative;
+	top: 35%;
+}
+
+	#website-header__title {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 700%;
+	}
+
+	#website-header__subtitle {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 150%;
+		font-style: italic;
+	}
+
+/* - - - - - - - - -
+ * 	PROJECTS
+- - - - - - - - - - */
+
+.project {
+	position: relative;
+}
+
+	.project .project__image {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.project .project__info {
+		color: rgba(0, 0, 0, 1);
+		display: none;
+
+		position: absolute;
+		width: 100%;
+		height: 75%;
+		text-align: center;
+		margin-top: 25%;
+		z-index: 1;
+	}
+
+		.project .project__info .project__info__title {
+			font-size: 250%;
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+
+		.project .project__info .project__info__description {
+			font-size: 125%;
+			font-family: 'Roboto', sans-serif;
+		}
+
+
