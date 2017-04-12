@@ -9,7 +9,7 @@ $(document).ready(function() {
 function mouseEnterIcon() {
 	$(this).children('div.project__info').show()
 	$(this).children('div.project__info').animate({ opacity: 1 }, 200)
-    $(this).children('img.project__image').animate({ opacity: 0.7 }, 200);
+    $(this).children('img.project__image').animate({ opacity: 0.4 }, 200);
 }
 
 function mouseLeaveIcon() {
