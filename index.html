@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|EB+Garamond" rel="stylesheet">
   </head>
 
   <!-- BODY -->
@@ -23,102 +24,100 @@
     </div>
 
   <!-- HEADER -->
-    <section role='website-header'>
-      <div class='jumbotron text-center no-padding'>
-        <div class='layer'></div>
+    <div role='website-header'>
+      <div class='jumbotron text-center'>
         <div id='website-header'>
-        <h3 id='website-header__subtitle'>At Heart I am a</h4>
-        <h1 id='website-header__title'>Developer</h1>
-    </section>
+          <h3 id='website-header__subtitle'>Let's make something</h4>
+          <h1 id='website-header__title'>Great Together.</h1>
+        </div>
+      </div>
+    </div>
 
 <!-- TODO: reduce the size of the images so they're not so damn big -->
 <!-- TODO: add alts to the images -->
 
+  <!-- ABOUT ME -->
+    <section role='about-me' class='about-me text-center'>
+      <h1 class='section__title'>I seek problems. I find solutions. I write code.</h1>
+      <p class='section__description'>I am constantly seeking challenges, oppourtunities to learn, and obstacles to overcome.</br>I have experience with Python, Java, C++, and more.<br>But most importantly, I am always ready to learn more.</p>
+    </section>
+
   <!-- PROJECTS -->
-    <section role='projects'>
-      <div class='projects-table'>
-        <div class='projects-row'>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Recoloured Mandelbrot</span>
-              <hr>
-              <span class="project__info__description">Colour twist on a classic. Created with PyFractals.</span>
+    <section role='projects' class='projects text-center'>
+      <h1 class='section__title'>My Best Projects</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="projects__carousel" class="carousel slide multi-item-carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="project col-xs-4">
+                  <img class="project__image" src="images/albion.png" alt="">
+                </div>          
+              </div>
+              <div class="item">
+                <div class="project col-xs-4">
+                  <img class="project__image img-responsive" src="images/newton.png" alt="">
+                </div>          
+              </div>
+              <div class="item">
+                <div class="project col-xs-4">
+                  <img class="project__image img-responsive" src="images/mandelbrot.png" alt="">
+                </div>
+              </div>
+              <div class="item">
+                <div class="project col-xs-4">
+                  <img class="project__image img-responsive" src="images/featured.png" alt="">
+                </div>
+              </div>
             </div>
-            <img class='project__image' src="images/featured.png">
-          </div>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Studybot</span>
-              <hr>
-              <span class="project__info__description">Input your notes and get quizzed!</span>
-            </div>
-            <img class='project__image' src="images/studybot.png">
-          </div>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Mandelbrot</span>
-              <hr>
-              <span class="project__info__description">The true Mandelbrot set, with no fancy effects. Generated with Pyfractals</span>
-            </div>
-            <img class='project__image' src="images/mandelbrot.png">
-          </div>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Tic-Tac-Toe</span>
-              <hr>
-              <span class="project__info__description">Tic-Tac-Toe with an AI-automated opponent. Built in Python.</span>
-            </div>
-            <img class='project__image' src="images/tictactoe.png">
-          </div>
-        </div>
-        <div class='projects-row'>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Julia Set</span>
-              <hr>
-              <span class="project__info__description">Another great fractal, created with PyFractals.</span>
-            </div>
-            <img class='project__image' src="images/julia.png">
-          </div>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Zombie Fortress</span>
-              <hr>
-              <span class="project__info__description">Build your fortress and defend it! Made in Java.</span>
-            </div>
-            <img class='project__image' src="images/zombiefortress.png">
-          </div>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Pong</span>
-              <hr>
-              <span class="project__info__description">Pong made in Python, with an automated opponent and a few extra features.</span>
-            </div>
-            <img class='project__image' src="images/pong.png">
-          </div>
-          <div class='project'>
-            <div class='project__info'>
-              <span class="project__info__title">Newton</span>
-              <hr>
-              <span class="project__info__description">Created with trig functions.</span>
-            </div>
-            <img class='project__image' src="images/newton.png">
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#projects__carousel" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#projects__carousel" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
   <!-- SKILLS -->
-    <section role='skills'>
+    <section role='skills' class='skills text-center'>
+      <h1 class='section__title'>My Skills</h1>
+      <p class='section__description'>These are my current skills up to date.</br>But I'm always learning new ones.</p>
     </section>
 
   <!-- RESUME -->
-    <section role='resume'>
+    <section role='resume' class='resume text-center'>
+      <h1 class='section__title'>Resume</h1>
     </section>
 
   <!-- CONTACT -->
-    <section role='contact' class='contact'>
-      <h2 class="contact-header">Let's get in touch</h2>
+    <section role='contact' class='contact text-center'>
+      <h2 class="section__title">Let's get in touch</h2>
+      <p class="section__description">Feel free to get in contact,</br>and let's make something amazing together.</p>
+      <div id="contact__icons">
+        <table id="contact__table" align="center">
+          <tbody>
+            <tr>
+<td class="contact__icon"><a href="https://github.com/MichaelAEden" target="_newtab"><img src="images/icons/github.png" alt="Github"></a></td>
+<td class="contact__icon"><a href="https://www.facebook.com/michael.eden.589" target="_newtab"><img src="images/icons/facebook.png" alt="Facebook"></a></td>
+<td class="contact__icon"><a href="mailto:mikey.eden@gmail.com" target="_newtab"><img src="images/icons/email.png" alt="Email"></a></td>
+<td class="contact__icon"><a href="https://www.instagram.com/mike_eden/" target="_newtab"><img src="images/icons/instagram.png" alt="Instagram"></a></td>
+<td class="contact__icon"><a href="https://www.linkedin.com/in/michaelaeden/" target="_newtab"><img src="images/icons/linkedin.png" alt="LinkedIn"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  <!-- COPYRIGHT -->
+    <section role='copyright' class='copyright'>
+      <p class="copyright__text text-center">&copy; 2017 Michael Eden. All trademarks are properties of their respective owners.</p>
     </section>
 
   <!-- SCRIPTS -->

@@ -1,5 +1,9 @@
 /* Used to create partially transparent overlays */
 
+section {
+	margin: 0 !important;
+}
+
 .layer {
     background-color: rgba(128, 128, 128, 0.5);
     position: absolute;
@@ -9,8 +13,25 @@
     height: 700px;
 }
 
-.no-padding {
-	margin: 0px !important;
+/* - - - - - - - - -
+ * 	GENERAL RULES
+- - - - - - - - - - */
+
+.section__title {
+	font-size: 250%;
+	font-family: 'Times New Roman', serif;
+
+	margin: 0;
+	padding: 7%;
+}
+
+.section__description {
+	font-size: 150%;
+	font-family: 'Roboto', serif;
+	line-height: 1.2em;
+
+	margin: 0;
+	padding-bottom: 7%;
 }
 
 /* - - - - - - - - -
@@ -21,6 +42,9 @@
 	background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/Tronto-wallpaper-26.jpg);
 	background-size: cover;
 	height: 700px;
+
+	padding: 0px !important;
+	margin: 0px !important;
 }
 
 #website-header {
@@ -43,26 +67,34 @@
 	}
 
 /* - - - - - - - - -
+ * 	ABOUT ME
+- - - - - - - - - - */
+
+.about-me {
+	background-color: rgb(220, 220, 220);
+
+	margin: 0;
+	padding: 0;
+}
+
+/* - - - - - - - - -
  * 	PROJECTS
 - - - - - - - - - - */
 
-.projects-row {
-	display: flex;
-	flex-basis: 100px;
-	flex-flow: row wrap-reverse;
+/* Carousel Styling */
+
+#projects__carousel { width: 100% ;}
+
+#projects__carousel .carousel-control .item.left { 
+	
 }
 
-.project {
-	display: inline;
-	position: relative;
-	flex: 1 0 200px;
-/*
-	min-width: 300px;
-	max-width: 400px;*/
-}
+#projects__carousel .carousel-inner .active.left  { left: -33%;              }
+#projects__carousel .carousel-inner .active.right { left: 33%;              }
+#projects__carousel .carousel-inner .next         { left: 33%;                }
+#projects__carousel .carousel-inner .prev         { left: -33%;              }
 
-	.project .project__image {
-		margin: 0;
+	.project__image {
 		width: 100%;
 		height: 100%;
 	}
@@ -91,19 +123,66 @@
 		}
 
 /* - - - - - - - - -
- * 	Contact Section
+ * 	SKILLS
+- - - - - - - - - - */
+
+.skills {
+	background-color: rgb(220, 220, 220);
+}
+
+/* - - - - - - - - -
+ * 	RESUME
+- - - - - - - - - - */
+
+.resume {
+}
+
+/* - - - - - - - - -
+ * 	CONTACT
 - - - - - - - - - - */
 
 .contact {
-	background-color: rgb(192, 192, 192);
-	text-align: center;
+	background-color: rgb(200, 210, 220);
 	width: 100%;
 	height: 100%;
 }
 
-.contact-header {
-	font-family: 'Roboto Condensed', sans-serif;
-	color: black;
-	font-size: 300%;
-	padding: 50px;
+.contact .section__description {
+	padding-bottom: 0;
+}
+
+	#contact__table {
+		text-align: center;
+		vertical-align: middle;
+		margin-top: 50px;
+		margin-bottom: 100px;
+	}
+
+		#contact__table .contact__icon img {
+			width: 8em;
+			height: auto;
+			padding: 2em;
+		}
+
+
+#contact__table:hover img {
+	opacity: 0.6;
+}
+
+#contact__table:hover .contact__icon img:hover {
+	opacity: 1;
+}
+
+/* - - - - - - - - -
+ * 	Copyright Section
+- - - - - - - - - - */
+
+.copyright {
+	background-color: rgb(0, 0, 0);
+}
+
+.copyright__text {
+	color: rgb(220, 220, 220);
+	font-size: 12px;
+	padding: 20px;
 }
