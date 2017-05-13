@@ -1,7 +1,9 @@
-/* Used to create partially transparent overlays */
-
 section {
 	margin: 0 !important;
+}
+
+body {
+	background-color: #666 !important;
 }
 
 .layer {
@@ -59,16 +61,13 @@ section {
 - - - - - - - - - - */
 
 .jumbotron {
-	background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2015/05/Tronto-wallpaper-26.jpg);
+	background-image: url(../images/header_background.jpg);
 	background-size: cover;
 	height: 700px;
-
-	padding: 0px !important;
-	margin: 0px !important;
 }
 
 #website-header {
-	color: black;
+	color: white;
 	text-transform: uppercase;
 
 	position: relative;
@@ -92,14 +91,15 @@ section {
 
 .about-me {
 	background-color: rgb(220, 220, 220);
-
-	margin: 0;
-	padding: 0;
 }
 
 /* - - - - - - - - -
  * 	PROJECTS
 - - - - - - - - - - */
+
+.projects {
+	background-color: white;
+}
 
 /* Carousel Styling */
 
@@ -188,7 +188,7 @@ section {
 - - - - - - - - - - */
 
 .resume {
-
+	background-color: white;
 }
 
 /* - - - - - - - - -
@@ -197,7 +197,6 @@ section {
 
 .contact {
 	background-color: rgb(200, 210, 220);
-	width: 100%;
 	height: 100%;
 }
 
