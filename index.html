@@ -7,7 +7,9 @@
     <link rel='icon' type='image/png' href='#'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
 
-  <!-- BOOTSTRAP -->
+    <!-- LIGHTSLIDER -->
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <!-- BOOTSTRAP -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:300" rel="stylesheet">
@@ -20,7 +22,13 @@
   <body>
 
   <!-- NAV MENU -->
-    <div class='nav-menu'>
+    <div id='nav-menu' class='nav-menu'>
+      <ul id='nav-bar' class='nav-bar'>
+        <li class='nav-bar__li'><a href='#about-me'>About Me</a></li>
+        <li class='nav-bar__li'><a href='#projects'>Projects</a></li>
+        <li class='nav-bar__li'><a href='#skills'>Skills</a></li>
+        <li class='nav-bar__li'><a href='#contact'>Contact</a></li>
+      </ul>
     </div>
 
   <!-- HEADER -->
@@ -37,56 +45,36 @@
 <!-- TODO: add alts to the images -->
 
   <!-- ABOUT ME -->
-    <section role='about-me' class='about-me text-center'>
+    <section id='about-me' class='about-me text-center'>
       <h1 class='section__title'>I seek problems. I find solutions. I write code.</h1>
       <p class='section__description'>I am constantly seeking challenges, oppourtunities to learn, and obstacles to overcome.</br>I have experience with Python, Java, C++, and more.<br>But most importantly, I am always ready to learn more.</p>
     </section>
 
   <!-- PROJECTS -->
-    <section role='projects' class='projects text-center'>
+    <section id='projects' class='projects text-center'>
       <h1 class='section__title'>My Best Projects</h1>
       <div class="row">
         <div class="col-md-12">
-          <div id="projects__carousel" class="carousel slide multi-item-carousel">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="project col-xs-4">
-                  <img class="project__image" src="images/projects/albion.png" alt="">
-                </div>          
-              </div>
-              <div class="item">
-                <div class="project col-xs-4">
-                  <img class="project__image img-responsive" src="images/projects/newton.png" alt="">
-                </div>          
-              </div>
-              <div class="item">
-                <div class="project col-xs-4">
-                  <img class="project__image img-responsive" src="images/projects/mandelbrot.png" alt="">
-                </div>
-              </div>
-              <div class="item">
-                <div class="project col-xs-4">
-                  <img class="project__image img-responsive" src="images/projects/featured.png" alt="">
-                </div>
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#projects__carousel" data-slide="prev">
-              <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#projects__carousel" data-slide="next">
-              <span class="icon-next"></span>
-            </a>
-          </div>
+          <ul id="projects__slider">
+            <li class="project col-xs-4">
+              <img class="project__image" src="images/projects/albion.png" alt="">
+            </l1>
+            <li class="project col-xs-4">
+              <img class="project__image img-responsive" src="images/projects/newton.png" alt="">
+            </l1>
+            <li class="project col-xs-4">
+              <img class="project__image img-responsive" src="images/projects/mandelbrot.png" alt="">
+            </l1>
+            <li class="project col-xs-4">
+              <img class="project__image img-responsive" src="images/projects/featured.png" alt="">
+            </l1>           
+          </ul>
         </div>
       </div>
     </section>
 
   <!-- SKILLS -->
-    <section role='skills' class='skills text-center'>
+    <section id='skills' class='skills text-center'>
       <h1 class='section__title'>My Skills</h1>
       <p class='section__description'>These are my current skills up to date.</br>But I'm always learning new ones.</p>
       <div class="row">
@@ -142,7 +130,7 @@
     </section>
 
   <!-- RESUME -->
-    <section role='resume' class='resume text-center'>
+    <section id='resume' class='resume text-center'>
       <h1 class='section__title'>Resume</h1>
       <form method='get' action='downloads/Resume.pages'>
         <button type='submit' class='btn--block'>Download</button>
@@ -150,7 +138,7 @@
     </section>
 
   <!-- CONTACT -->
-    <section role='contact' class='contact text-center'>
+    <section id='contact' class='contact text-center'>
       <h2 class="section__title">Let's get in touch</h2>
       <p class="section__description">Feel free to get in contact,</br>and let's make something amazing together.</p>
       <div id="contact__icons">
@@ -179,12 +167,13 @@
     </section>
 
   <!-- COPYRIGHT -->
-    <section role='copyright' class='copyright'>
+    <section id='copyright' class='copyright'>
       <p class="copyright__text text-center">&copy; 2017 Michael Eden. All trademarks are properties of their respective owners.</p>
     </section>
 
   <!-- SCRIPTS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/pagescroll.js"></script>

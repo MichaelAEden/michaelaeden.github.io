@@ -86,6 +86,36 @@ body {
 	}
 
 /* - - - - - - - - -
+ * 	NAV MENU
+- - - - - - - - - - */
+
+.nav-menu {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.8);
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+	.nav-menu .nav-bar {
+		font-family: 'Roboto', sans-serif;
+		font-size: 150%;
+		text-align: center;
+	}
+
+		.nav-menu .nav-bar .nav-bar__li {
+			display: inline;
+			padding: 0 20px;
+		}
+
+			.nav-menu .nav-bar .nav-bar__li a {
+				color: white;
+	    		text-decoration: none;
+			}
+
+/* - - - - - - - - -
  * 	ABOUT ME
 - - - - - - - - - - */
 
@@ -101,21 +131,18 @@ body {
 	background-color: white;
 }
 
-/* Carousel Styling */
+/* Slider Styling */
 
-#projects__carousel { width: 100% ; }
-
-#projects__carousel .carousel-inner .active.left  { left: -33%;              }
-#projects__carousel .carousel-inner .active.right { left: 33%;              }
-#projects__carousel .carousel-inner .next         { left: 33%;                }
-#projects__carousel .carousel-inner .prev         { left: -33%;              }
-
-.project__image {
-	width: 100%;
-	height: 100%;
+#projects__slider {
+	width: 100% ;
+	padding-bottom: 7%; 
 }
 
-.project .project__info {
+#projects__slider .project__image {
+	width: 100%;
+}
+
+/*.project .project__info {
 	color: rgba(0, 0, 0, 1);
 	display: none;
 
@@ -136,7 +163,7 @@ body {
 	.project .project__info .project__info__description {
 		font-size: 150%;
 		font-family: 'Roboto Condensed', sans-serif;
-	}
+	}*/
 
 /* - - - - - - - - -
  * 	SKILLS
