@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	$('li.project').hover(mouseEnterProject, mouseLeaveProject);
 	$('#projects__slider').lightSlider({
-		 item: 3 
+		 item: 3,
+		 galleryMargin: 50,
+         currentPagerPosition: 'middle'
 	});
 })
 

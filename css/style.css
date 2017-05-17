@@ -3,7 +3,7 @@ section {
 }
 
 body {
-	background-color: #666 !important;
+	background-color: white !important;
 }
 
 .layer {
@@ -120,7 +120,7 @@ body {
 - - - - - - - - - - */
 
 .about-me {
-	background-color: rgb(220, 220, 220);
+	background-color: white;
 }
 
 /* - - - - - - - - -
@@ -128,21 +128,17 @@ body {
 - - - - - - - - - - */
 
 .projects {
-	background-color: white;
+	background-color: rgb(220, 220, 220);
+	padding-bottom: 7%;
 }
 
 /* Slider Styling */
-
-#projects__slider {
-	width: 100% ;
-	padding-bottom: 7%; 
-}
 
 #projects__slider .project__image {
 	width: 100%;
 }
 
-/*.project .project__info {
+.project .project__info {
 	color: rgba(0, 0, 0, 1);
 	display: none;
 
@@ -152,7 +148,7 @@ body {
 	padding: 10px;
 	text-align: center;
 	margin-top: 25%;
-	z-index: 1;
+	z-index: 100;
 }
 
 	.project .project__info .project__info__title {
@@ -163,19 +159,19 @@ body {
 	.project .project__info .project__info__description {
 		font-size: 150%;
 		font-family: 'Roboto Condensed', sans-serif;
-	}*/
+	}
 
 /* - - - - - - - - -
  * 	SKILLS
 - - - - - - - - - - */
 
 .skills {
-	background-color: rgb(220, 220, 220);
+	background-color: white;
 	padding-bottom: 7%;
 }
 
 	.skills__table {
-		background-color: rgb(220, 220, 220);
+		background-color: white;
 		font-family: 'Roboto', sans-serif;
 	}
 
@@ -215,7 +211,7 @@ body {
 - - - - - - - - - - */
 
 .resume {
-	background-color: white;
+	background-color: rgb(220, 220, 220);
 }
 
 /* - - - - - - - - -
