@@ -6,6 +6,12 @@ body {
 	background-color: white !important;
 }
 
+/* Fixes horizontal scroll-bar bug */
+.row { 
+	margin: 0 !important; 
+	padding: 0 !important;
+}
+
 .layer {
     background-color: rgba(128, 128, 128, 0.5);
     position: absolute;
@@ -129,7 +135,7 @@ body {
 
 .projects {
 	background-color: rgb(220, 220, 220);
-	padding-bottom: 7%;
+	padding: 0 7% 7% 7%;
 }
 
 /* Slider Styling */
