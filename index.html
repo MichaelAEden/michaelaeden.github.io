@@ -5,7 +5,6 @@
   <head>
     <title>Michael Eden</title>
     <link rel='icon' type='image/png' href='#'>
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
 
     <!-- LIGHTSLIDER -->
     <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
@@ -16,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette|EB+Garamond" rel="stylesheet">
+
+    <!-- CUSTOM STYLES -->
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
   </head>
 
   <!-- BODY -->
@@ -41,60 +43,72 @@
       </div>
     </div>
 
-<!-- TODO: reduce the size of the images so they're not so damn big -->
+<!-- TODO: reduce the size of the images so they're not so big -->
 <!-- TODO: add alts to the images -->
 
   <!-- ABOUT ME -->
-    <section id='about-me' class='about-me text-center'>
+    <section id='about-me' class='text-center'>
       <h1 class='section__title'>I seek problems. I find solutions. I write code.</h1>
       <p class='section__description'>I am constantly seeking challenges, oppourtunities to learn, and obstacles to overcome.</br>I have experience with Python, Java, C++, and more.<br>But most importantly, I am always ready to learn more.</p>
     </section>
 
+  <!-- PROJECT MODAL -->
+    <div id='project-modal' class='modal fade'>
+      <div class='modal-dialog' role='document'>
+        <div class='modal-header'>
+          <h5 id="project-title" class='modal-title'></h4>
+          <button type="button" class="close" data-dismiss='modal'>
+            <span aria-hidden="true">X</span>
+          </button>
+        </div>
+        <div class='modal-body text-center'>
+          <div id="project-info">
+            <span id="project-date"></span></br>
+            <b>Language: </b><span id="project-language"></span></br>
+            <b>Tools: </b><span id="project-tools"></span></br>
+            </br>
+            <p id="project-description"></p>
+          </div>
+          </br>
+          <a id="project-link" href="" target="_blank">
+            <button type='button' class='btn--block'>View on Github</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
   <!-- PROJECTS -->
-    <section id='projects' class='projects text-center'>
+    <section id='projects' class='text-center'>
       <h1 class='section__title'>My Best Projects</h1>
       <ul id="projects__slider">
-        <li class="project col-xs-4">
-          <a href="https://github.com/MichaelAEden/PyFractals" target="_blank">
-            <img class="project__image img-responsive" src="images/projects/pyfractals.png" alt="PyFractals">
-          </a>
-          <!-- <div class='project__info'>
-            <span class='project__info__title'>Photography</p>
-            <span class='project__info__description'>This stuff's cool</p>
-          </div> -->
+        <li id="pyfractals" class="project col-xs-4">
+          <img class="project__image img-responsive" data-toggle="modal" data-target="#project-modal" src="img/projects/pyfractals.png" alt="PyFractals">
         </l1>
-        <li class="project col-xs-4">
-          <a href="https://github.com/MichaelAEden/GameOfLife" target="_blank">
-            <img class="project__image img-responsive" src="images/projects/game_of_life.png" alt="The Game of Life">
-          </a>
+        <li id="game-of-life" class="project col-xs-4">
+          <img class="project__image img-responsive" data-toggle="modal" data-target="#project-modal" src="img/projects/game_of_life.png" alt="The Game of Life">
         </l1>
-        <li class="project col-xs-4">
-          <a href="https://github.com/MichaelAEden/GameOfLife3D" target="_blank">
-            <img class="project__image img-responsive" src="images/projects/game_of_life_3d.png" alt="Game of Life 3D">
-          </a>
+        <li id="game-of-life-3d" class="project col-xs-4">
+          <img class="project__image img-responsive" data-toggle="modal" data-target="#project-modal" src="img/projects/game_of_life_3d.png" alt="Game of Life 3D">
         </l1>
-        <li class="project col-xs-4">
-          <a href="https://github.com/MichaelAEden/The-StudyBot" target="_blank">
-            <img class="project__image img-responsive" src="images/projects/studybot.png" alt="StudyBot">
-          </a>
+        <li id="studybot" class="project col-xs-4">
+          <img class="project__image img-responsive" data-toggle="modal" data-target="#project-modal" src="img/projects/studybot.png" alt="StudyBot">
         </l1>
-        <li class="project col-xs-4">
-          <a href="https://github.com/MichaelAEden/Pong" target="_blank">
-            <img class="project__image img-responsive" src="images/projects/pong.png" alt="Pong">
-          </a>
+        <li id="pong" class="project col-xs-4">
+          <img class="project__image img-responsive" data-toggle="modal" data-target="#project-modal" src="img/projects/pong.png" alt="Pong">
         </l1>  
-        <li class="project col-xs-4">
-          <a href="https://github.com/MichaelAEden/Tic-Tac-Toe" target="_blank">
-            <img class="project__image img-responsive" src="images/projects/tictactoe.png" alt="">
-          </a>
+        <li id="tic-tac-toe" class="project col-xs-4">
+          <img class="project__image img-responsive" data-toggle="modal" data-target="#project-modal" src="img/projects/tictactoe.png" alt="Tic-Tac-Toe">
         </l1>             
       </ul>
     </section>
 
   <!-- SKILLS -->
-    <section id='skills' class='skills text-center'>
+    <section id='skills' class='text-center'>
       <h1 class='section__title'>My Skills</h1>
       <p class='section__description'>These are my current skills up to date.</br>But I'm always learning new ones.</p>
+      </br>
+      </br>
+      </br>
       <div class="row">
         <div class="col-md-6">
           <table class='skills__table' align="center">
@@ -148,7 +162,7 @@
     </section>
 
   <!-- RESUME -->
-    <section id='resume' class='resume text-center'>
+    <section id='resume' class='text-center'>
       <h1 class='section__title'>Resume</h1>
       <form method='get' action='downloads/Resume.pdf'>
         <button type='submit' class='btn--block'>Download</button>
@@ -156,7 +170,7 @@
     </section>
 
   <!-- CONTACT -->
-    <section id='contact' class='contact text-center'>
+    <section id='contact' class='text-center'>
       <h2 class="section__title">Let's get in touch</h2>
       <p class="section__description">Feel free to get in contact,</br>and let's make something amazing together.</p>
       <div id="contact__icons">
@@ -164,19 +178,16 @@
           <tbody>
             <tr>
               <td class="contact__icon">
-                <a href="https://github.com/MichaelAEden" target="_newtab"><img src="images/icons/github.png" alt="Github"></a>
+                <a href="https://github.com/MichaelAEden" target="_newtab"><img src="img/icons/github.png" alt="Github"></a>
               </td>
               <td class="contact__icon">
-                <a href="https://www.facebook.com/michael.eden.589" target="_newtab"><img src="images/icons/facebook.png" alt="Facebook"></a>
+                <a href="mailto:mikey.eden@gmail.com" target="_newtab"><img src="img/icons/email.png" alt="Email"></a>
               </td>
               <td class="contact__icon">
-                <a href="mailto:mikey.eden@gmail.com" target="_newtab"><img src="images/icons/email.png" alt="Email"></a>
+                <a href="https://www.instagram.com/mike_eden/" target="_newtab"><img src="img/icons/instagram.png" alt="Instagram"></a>
               </td>
               <td class="contact__icon">
-                <a href="https://www.instagram.com/mike_eden/" target="_newtab"><img src="images/icons/instagram.png" alt="Instagram"></a>
-              </td>
-              <td class="contact__icon">
-                <a href="https://www.linkedin.com/in/michaelaeden/" target="_newtab"><img src="images/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/michaelaeden/" target="_newtab"><img src="img/icons/linkedin.png" alt="LinkedIn"></a>
               </td>
             </tr>
           </tbody>
@@ -185,7 +196,7 @@
     </section>
 
   <!-- COPYRIGHT -->
-    <section id='copyright' class='copyright'>
+    <section id='copyright'>
       <p class="copyright__text text-center">&copy; 2017 Michael Eden. All trademarks are properties of their respective owners.</p>
     </section>
 
